@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=800, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+
+<body>
+
+  <div id="alert-box"></div>
+  <script>
+    Vue.component('alert-box', {
+      template: `
+      <h3>这里是弹出警告框⚠️</h3>
+      `
+    })
+    new Vue({
+      el: '#alert-box',
+    })
+  </script>
+</body>
+
+</html>
